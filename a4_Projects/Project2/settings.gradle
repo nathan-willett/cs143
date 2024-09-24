@@ -10,10 +10,5 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
 }
 
-//////////////////////////////////////////////////////////////////////////////////
-rootProject.name = 'CS143'
-//////////////////////////////////////////////////////////////////////////////////
-
-include 'a4_Projects:Project1__10_16'
-
-project(':a4_Projects:Project1__10_16').projectDir = new File('a4_Projects/Project1__10_16')
+rootProject.name = 'Project2'
+include('app')
