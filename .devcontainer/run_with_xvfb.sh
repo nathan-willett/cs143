@@ -32,8 +32,8 @@ sleep 2
 echo "DISPLAY is set to $DISPLAY"
 
 ################################################################################
-# Change to the root directory of the project
-cd /workspaces/Your-Project-Name || exit
+PROJECT_PATH=${PROJECT_PATH:-$(read -p "Enter the project path: " PROJECT_INPUT && echo $PROJECT_INPUT)}
+cd "$PROJECT_PATH" || exit
 ################################################################################
 
 # Ensure gradlew has executable permissions
